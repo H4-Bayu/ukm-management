@@ -16,3 +16,7 @@ Route::post('/login', [AuthController::class, 'loginProcess']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/dashboard_admin', function () {
+    return view('dashboard_admin');
+});

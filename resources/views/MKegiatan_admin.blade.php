@@ -104,13 +104,10 @@
 
 <body>
   <div class="layout-wrapper d-flex">
-
-    <!-- SIDEBAR -->
     <aside class="sidebar p-3">
       <h6 class="fw-bold mb-4">Admin Dashboard UKM</h6>
 
       <nav class="nav flex-column gap-1">
-        <!-- Manajemen Pengguna -->
         <a href="/MPengguna_admin"
            class="sidebar-link {{ request()->is('MPengguna_admin') ? 'active' : '' }}">
           <i class="bi bi-people sidebar-link-icon"></i>
@@ -120,7 +117,6 @@
           </span>
         </a>
 
-        <!-- Manajemen Kegiatan (HALAMAN INI) -->
         <a href="/Mkegiatan_admin"
            class="sidebar-link {{ request()->is('Mkegiatan_admin') ? 'active' : '' }}">
           <i class="bi bi-calendar-event sidebar-link-icon"></i>
@@ -130,8 +126,8 @@
           </span>
         </a>
 
-        <!-- Monitoring Absensi -->
-        <a href="#" class="sidebar-link">
+        <a href="/MAbsensi_admin" 
+        class="sidebar-link {{ request()->is('MAbsensi_admin') ? 'active' : '' }}">   
           <i class="bi bi-clipboard-check sidebar-link-icon"></i>
           <span class="sidebar-link-text">
             <span>Monitoring</span>
@@ -139,8 +135,8 @@
           </span>
         </a>
 
-        <!-- Manajemen Kas -->
-        <a href="#" class="sidebar-link">
+        <a href="/MKas_admin" 
+        class="sidebar-link {{ request()->is('MKas_admin') ? 'active' : '' }}">
           <i class="bi bi-cash-coin sidebar-link-icon"></i>
           <span class="sidebar-link-text">
             <span>Manajemen</span>
@@ -165,11 +161,11 @@
         </div>
 
         <div class="d-flex align-items-center gap-2">
-          <div class="text-end small">
-            <div class="fw-semibold">Admin UKM</div>
-            <div class="text-muted">Pengurus</div>
+          <div class="text-end">
+            <div class="fw-semibold small">Admin UKM</div>
+            <div class="text-muted small">Pengurus</div>
           </div>
-          <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
+          <div class="rounded-circle d-inline-flex align-items-center justify-content-center bg-primary text-white"
                style="width:32px;height:32px;">
             A
           </div>

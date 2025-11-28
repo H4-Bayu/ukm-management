@@ -25,3 +25,11 @@ Route::get('/MPengguna_admin', function () {
 Route::get('/Mkegiatan_admin', function () {
     return view('MKegiatan_admin');  
 });
+
+Route::get('/MAbsensi_admin', function () {
+    return view('MAbsensi_admin');  
+});
+
+Route::get('/MKas_admin', function () {
+    return view('MKas_admin');  
+});

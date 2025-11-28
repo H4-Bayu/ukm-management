@@ -105,7 +105,7 @@
         </a>
 
         <!-- Monitoring Absensi -->
-        <a href="#" class="sidebar-link">
+        <a href="/MAbsensi_admin" class="sidebar-link">
           <i class="bi bi-clipboard-check sidebar-link-icon"></i>
           <span class="sidebar-link-text">
             <span>Monitoring</span>
@@ -114,7 +114,8 @@
         </a>
 
         <!-- Manajemen Kas -->
-        <a href="#" class="sidebar-link">
+        <a href="/MKas_admin" 
+        class="sidebar-link {{ request()->is('MKas_admin') ? 'active' : '' }}">
           <i class="bi bi-cash-coin sidebar-link-icon"></i>
           <span class="sidebar-link-text">
             <span>Manajemen</span>
